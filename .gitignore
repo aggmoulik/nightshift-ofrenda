@@ -1,0 +1,5 @@
+node_modules/
+ofrenda.db
+ofrenda.db-wal
+ofrenda.db-shm
+*.log

@@ -1,0 +1,13 @@
+[defaults]
+timezone = "Europe/Berlin"
+retention_days = 30
+
+[[job]]
+name = "nightly-backup"
+schedule = "0 3 * * *"
+command = ["sh", "-c", "echo backup complete"]
+
+[[job]]
+name = "sync-catalog"
+schedule = "*/15 * * * *"
+command = ["sh", "-c", "echo catalog synced"]
